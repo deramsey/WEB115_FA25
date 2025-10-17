@@ -1,0 +1,26 @@
+*{
+    font-size: 7vw;
+}
+
+body{
+    background-color: grey;
+}
+
+#main_idea{
+    font-size: 1em;
+    background-color: hsl(180, 50%, 50%);
+}
+
+.text{
+    background-color: yellow;
+    font-size: .3em;
+}
+
+p{
+    background-color: white;
+    font-size: 3em;
+}
+
+#h{
+    background-color: green !important;
+}

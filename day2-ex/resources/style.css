@@ -1,0 +1,18 @@
+:root{
+    --primary: 90;
+    --primary-color: hsl(var(--primary), 100%, 40%);
+    --secondary-color: hsl(calc(var(--primary) + 30), 100%, 90%);
+}
+
+body{
+   /* background-color: rgb(47, 173, 169); 
+   background-color: hsl(360, 50%, 25%);*/
+   background-color: var(--primary-color);
+}
+
+main{
+    /*background-color: rgba(255, 255, 255, 0.7);
+    background-color: hsl(180, 50%, 50%);
+    color: rgba(255, 0, 255, .2)*/
+    background-color: var(--secondary-color);
+}

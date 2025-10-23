@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    border: 10px solid #338833;
+    margin: 2rem;
+    width: 20vw;
+    min-height: 10vh;
+}
+
+.relative{
+    position: relative;
+    top: -15vw;
+    left: 30vw;
+}
+
+.relative::after{
+    content: "Relative";
+}
+
+.fixed{
+    position: fixed;
+    bottom: 3vw;
+    right: 3vw;
+}
+
+.fixed::after{
+    content: "Fixed";
+}
+
+.parent{
+    width: 40vw;
+    min-height: 40vh;
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.absolute{
+    border: 10px solid #995500;
+    width: 20vw;
+    min-height: 20vw;
+    position: absolute;
+    top: 10vw;
+    left: 50vw;
+}
+
+.parent::after{
+    content: "Parent";
+}
+
+.absolute::after{
+    content: "Absolute";
+}
+
+p{
+    font-size: 2rem;
+}
+
+.sticky{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: -1;
+}
+
+.sticky::after{
+    content: "Sticky";
+}
+
+/* Z-Index Demo Code */
+aside{
+    width: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: 5px solid grey;
+    float: left;
+    margin-right: -150px;
+    position: relative;
+}
+
+#r{
+    background: red;
+    z-index: 1;
+}
+
+#g{
+    background: green;
+    z-index:0;
+}
+
+#b{
+    background: blue;
+    z-index: 2;
+}

@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #333;
+}
+
+main{
+    width: 40vw;
+    min-height: 60vh;
+    padding: .5rem;
+    background: white;
+    margin: 0 auto;
+}
+
+label, input{
+    display: block;
+}
+
+fieldset > label, fieldset > input{
+    display: inline-block;
+}
+
+#uname{
+    width: 100%
+}
+
+input[type='email']{
+    width: 100%;
+}
+
+input[random='a']{
+    width: 100%;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <main>
+        <form>
+            <label for="uname">Username: </label><input type="text" name="uname" id="uname" placeholder="Username" />
+            <label for="pass">Password: </label><input type="password" random="a" name="pass" id="pass" placeholder="Password"/>
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <input type="date" name="birthday" id="birthday" />
+            <label for="color">Favorite Color: </label><input type="color" name="color" id="color" />
+            <input type="range" name="r" id="r" min="0" max="10" />
+            <textarea name="msg" id="msg">
+                Placeholder text
+            </textarea>
+
+            <fieldset>
+                <legend>Radio Buttons</legend>
+            <input type="radio" name="choice" value="a" id="choicea" checked/> <label for="choicea">Option A</label>
+            <input type="radio" name="choice" value="b" id="choiceb"/> <label for="choiceb">Option B</label>
+            <input type="radio" name="choice" value="c" id="choicec"/> <label for="choicec">Option C</label>
+            </fieldset>
+             <fieldset>
+                <legend>Checkboxes</legend>
+            <input type="checkbox" name="check" value="a" id="cha" /> <label for="cha">Choice A</label>
+            <input type="checkbox" name="check" value="b" id="chb" /> <label for="chb">Choice B</label>
+            <input type="checkbox" name="check" value="c" id="chc" /> <label for="chc">Choice C</label>
+           </fieldset>
+            <select name="day"><!-- multiple --> 
+                <option value="Su">Sunday</option>
+                <option value="M">Monday</option>
+                <option value="T">Tuesday</option>
+            </select>
+
+            <button>Submit</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

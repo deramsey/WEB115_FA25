@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
+main{
+    background: white;
+    padding: 12px;
+    margin: 0 auto;
+    min-height: 70vh;
+    width: 50%;
+}
+
+section{
+    aspect-ratio: 16/9;
+    border: 2px solid black;
+}
